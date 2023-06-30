@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { SentenceWriter } from "./components/SentenceWriter";
 
 function App() {
   return (
