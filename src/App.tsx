@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { AnimatedParagraph } from "./components/textRevealAnimation";
 
 function App() {
   return (
@@ -21,9 +22,7 @@ function App() {
         </Content>
       </Container>
       <Container>
-        <MotionSentence>
-          I <p>have a strong eye for design and detail</p>
-        </MotionSentence>
+        <AnimatedParagraph sentence="love going out on the weekend with friends to have fun and chillax for the new work week" />
       </Container>
     </main>
   );
