@@ -1,30 +1,34 @@
 import styled from "@emotion/styled";
 import { AnimatedParagraph } from "./components/textRevealAnimation";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-    <main>
-      <Container>
-        <Content>
-          <Intro>
-            Hello ✋,
-            <br />
-          </Intro>
-          <Title>am Peter a Front-End Developer</Title>
-          <SubTitle>
-            I design and build user-friendly digital
-            products by following industry best practices.
-          </SubTitle>
-          <CTAWrapper>
-            <Button>Got a project</Button>
-            <SecondaryButton>Let's talk</SecondaryButton>
-          </CTAWrapper>
-        </Content>
-      </Container>
-      <Container>
-        <AnimatedParagraph sentence="love going out on the weekend with friends to have fun and chillax for the new work week" />
-      </Container>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Container>
+          <Content>
+            <Intro>
+              Hello ✋,
+              <br />
+            </Intro>
+            <Title>am Peter a Front-End Developer</Title>
+            <SubTitle>
+              I design and build user-friendly digital
+              products by following industry best practices.
+            </SubTitle>
+            <CTAWrapper>
+              <Button>Got a project</Button>
+              <SecondaryButton>Let's talk</SecondaryButton>
+            </CTAWrapper>
+          </Content>
+        </Container>
+        <Container>
+          <AnimatedParagraph sentence="love going out on the weekend with friends to have fun and chillax for the new work week" />
+        </Container>
+      </main>
+    </>
   );
 }
 

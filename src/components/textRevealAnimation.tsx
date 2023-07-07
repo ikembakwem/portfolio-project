@@ -5,6 +5,14 @@ interface Props {
   sentence: string;
 }
 
+const sentences = [
+  "love football",
+  "love going to parties",
+  "enjoy having meaning conversations",
+  "love meeting new people and making friends",
+  "love going out on the weekend with friends to have fun and chillax for the new work week",
+];
+
 export const AnimatedParagraph = ({ sentence }: Props) => {
   const [words, setWords] = useState<string[]>([]);
 
@@ -31,7 +39,7 @@ export const AnimatedParagraph = ({ sentence }: Props) => {
 
 const AnimatedSpan = styled.span`
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s linear forwards;
 
   @keyframes fadeIn {
     0% {
