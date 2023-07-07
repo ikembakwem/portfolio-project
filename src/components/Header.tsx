@@ -12,8 +12,8 @@ export const Header = () => {
         <Navigations />
       </NavContainer>
       <CTAContainer>
-        <Button>Hire Me</Button>
-        <Button>Let's Talk</Button>
+        <Button>Hire me</Button>
+        <Button>Got a project</Button>
       </CTAContainer>
     </HeaderStyles>
   );

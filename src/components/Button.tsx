@@ -1,16 +1,14 @@
 import styled from "@emotion/styled";
-import {
-  ComponentProps,
-  ReactNode,
-  forwardRef,
-} from "react";
+import { ComponentProps, ReactNode } from "react";
 
 interface ButtonProps extends ComponentProps<"button"> {
   children: ReactNode;
+  variants?: "primary" | "secondary";
 }
 
 export const Button = ({
   children,
+  variants = "primary",
   ...rest
 }: ButtonProps) => (
   <ButtonStyles {...rest}>{children}</ButtonStyles>

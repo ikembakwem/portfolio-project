@@ -1,22 +1,26 @@
 import styled from "@emotion/styled";
+import { Container } from "./Layouts";
 
 export const Hero = () => (
   <section>
-    <Content>
-      <Intro>
-        Hello ✋,
-        <br />
-      </Intro>
-      <Title>am Peter a Front-End Developer</Title>
-      <SubTitle>
-        I design and build user-friendly digital products by
-        following industry best practices.
-      </SubTitle>
-      <CTAWrapper>
-        <Button>Got a project</Button>
-        <SecondaryButton>Let's talk</SecondaryButton>
-      </CTAWrapper>
-    </Content>
+    <Container>
+      <Content>
+        <Intro>
+          Hi ✋,
+          <br />
+        </Intro>
+        <Title>am Ikechukwu a Front-End Developer</Title>
+        <SubTitle>
+          I create web experiences that are user-friendly,
+          solve real-world problems, and achieve business
+          goals.
+        </SubTitle>
+        <CTAWrapper>
+          <Button>Got a project</Button>
+          <SecondaryButton>Let's talk</SecondaryButton>
+        </CTAWrapper>
+      </Content>
+    </Container>
   </section>
 );
 
@@ -24,6 +28,7 @@ const CTAWrapper = styled.div`
   margin-top: 24px;
   display: flex;
   gap: 16px;
+  justify-content: center;
 `;
 
 const Content = styled.div`
@@ -31,6 +36,8 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
 `;
 
 const Intro = styled.span`
@@ -49,8 +56,8 @@ const SubTitle = styled.p`
 `;
 
 const Title = styled.h1`
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 62px;
+  line-height: 62px;
   font-weight: 700;
   max-width: 720px;
   letter-spacing: -0.04em;
