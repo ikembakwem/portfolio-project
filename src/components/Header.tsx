@@ -1,36 +1,47 @@
 import styled from "@emotion/styled";
 import { Navigations } from "./Navigations";
+import { Button } from "./Button";
 
 export const Header = () => {
   return (
     <HeaderStyles>
-      <LogoContainer />
+      <LogoContainer>
+        <h2>IKE</h2>
+      </LogoContainer>
       <NavContainer>
         <Navigations />
       </NavContainer>
-      <CTAContainer />
+      <CTAContainer>
+        <Button>Hire Me</Button>
+        <Button>Let's Talk</Button>
+      </CTAContainer>
     </HeaderStyles>
   );
 };
 
 const LogoContainer = styled.div`
-  border: 4px solid red;
   flex: 1;
-  height: 60px;
+  display: flex;
+  align-items: center;
 `;
 
 const NavContainer = styled.div`
-  border: 4px solid blue;
   flex: 1;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const CTAContainer = styled.div`
-  border: 4px solid yellow;
   flex: 1;
-  height: 60px;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
 const HeaderStyles = styled.header`
   display: flex;
+  padding: 0.75rem 1.5rem;
+  height: 67px;
 `;
