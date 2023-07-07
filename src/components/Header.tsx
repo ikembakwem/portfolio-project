@@ -13,7 +13,7 @@ export const Header = () => {
       </NavContainer>
       <CTAContainer>
         <Button>Hire me</Button>
-        <Button>Got a project</Button>
+        <Button variant="secondary">Got a project</Button>
       </CTAContainer>
     </HeaderStyles>
   );

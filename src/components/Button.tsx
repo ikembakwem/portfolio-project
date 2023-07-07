@@ -3,18 +3,22 @@ import { ComponentProps, ReactNode } from "react";
 
 interface ButtonProps extends ComponentProps<"button"> {
   children: ReactNode;
-  variants?: "primary" | "secondary";
+  variant?: "primary" | "secondary";
 }
 
 export const Button = ({
   children,
-  variants = "primary",
+  variant = "primary",
   ...rest
-}: ButtonProps) => (
-  <ButtonStyles {...rest}>{children}</ButtonStyles>
-);
+}: ButtonProps) => {
+  return variant === "primary" ? (
+    <Primary {...rest}>{children}</Primary>
+  ) : (
+    <Secondary {...rest}>{children}</Secondary>
+  );
+};
 
-const ButtonStyles = styled.button`
+const Primary = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -23,5 +27,11 @@ const ButtonStyles = styled.button`
   border-radius: 0.5rem;
   font-size: 0.875rem;
   background-color: blue;
+  border: 2px solid blue;
   color: #fff;
+`;
+
+const Secondary = styled(Primary)`
+  background-color: #fff;
+  color: blue;
 `;

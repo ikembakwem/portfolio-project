@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Container } from "./Layouts";
+import { Button } from "./Button";
 
 export const Hero = () => (
   <section>
@@ -16,8 +17,8 @@ export const Hero = () => (
           goals.
         </SubTitle>
         <CTAWrapper>
-          <Button>Got a project</Button>
-          <SecondaryButton>Let's talk</SecondaryButton>
+          <Button>Hire me</Button>
+          <Button variant="secondary">Got a project</Button>
         </CTAWrapper>
       </Content>
     </Container>
@@ -61,26 +62,6 @@ const Title = styled.h1`
   font-weight: 700;
   max-width: 720px;
   letter-spacing: -0.04em;
-`;
-
-const Button = styled.button`
-  font-size: 16px;
-  font-weight: 500;
-  height: 44px;
-  padding: 12px 24px;
-  cursor: pointer;
-  background-color: #2b197c;
-  border: 2px solid #2b197c;
-  color: #fff;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const SecondaryButton = styled(Button)`
-  color: #2b197c;
-  background-color: #fff;
 `;
 
 const MotionSentence = styled.div`
